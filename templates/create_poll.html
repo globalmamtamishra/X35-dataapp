@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Poll</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Create a New Poll</h1>
+    <form method="post" action="/create">
+        <label>Question:</label>
+        <input type="text" name="question" required><br><br>
+
+        <label>Options:</label><br>
+        <input type="text" name="options" required><br>
+        <input type="text" name="options"><br>
+        <input type="text" name="options"><br>
+        <button type="submit">Create Poll</button>
+    </form>
+</body>
+</html>

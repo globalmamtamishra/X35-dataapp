@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Polls</title>
+</head>
+<body>
+    <h1>Active Polls</h1>
+    <ul>
+        {% for poll in polls %}
+        <li>
+            <a href="/poll/{{ poll[0] }}">{{ poll[1] }}</a>
+        </li>
+        {% end %}
+    </ul>
+    <a href="/create">Create a new poll</a>
+</body>
+</html>

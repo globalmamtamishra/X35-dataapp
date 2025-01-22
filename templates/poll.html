@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ poll[1] }}</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>{{ poll[1] }}</h1>
+    <form method="post">
+        {% for option in options %}
+        <input type="radio" name="option" value="{{ option[0] }}" required> {{ option[1] }}<br>
+        {% end %}
+        <button type="submit">Vote</button>
+    </form>
+</body>
+</html>
